@@ -31,7 +31,7 @@
       </a>
       <div class="header__block">
         <div class="header__contacts">Екатеринбург</div>
-        <a href="#" class="btn header__call">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call">Заказать звонок</a>
         <a href="#" class="header__cart">
           <div class="header__icon">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -815,7 +815,7 @@
         <div class="footer__feedback">
           <p><b>Дорогие гости!</b></p>
           <p>Мы с радостью примем Ваши предложения и комментарии для улучшения качества работы.<br>Напишите!</p>
-          <a href="#" class="btn footer__btn">Написать</a>
+          <a data-fancybox data-src="#feedback" href="javascript:;" class="btn footer__btn">Написать</a>
         </div>
       </div>
       <div class="footer__address">
@@ -831,6 +831,26 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="feedback" class="modal">
+    <p class="modal__title">Ваше предложение</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Ваш телефон">
+      <textarea class="form__message" placeholder="Ваше предложение"></textarea>
+      <button type="submit" class="btn form__btn">Отправить</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="call" class="modal modal--img">
+    <p class="modal__title">Закажите звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Ваш телефон">
+      <button type="submit" class="btn form__btn">Отправить</button>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
