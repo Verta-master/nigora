@@ -1,0 +1,84 @@
+.service,
+.about {
+  width: 1160px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.about__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 68px;
+    height: 68px;
+    transform: translate(-50%,-50%);
+    background-image: url(../img/icons/youtube.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+  img {
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+.about__info {
+  width: 48%;
+  line-height: 1.4;
+  
+  p {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .title-3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .link {
+    margin-bottom: 30px;
+  }
+}
+.about__links {
+  display: flex;
+  flex-wrap: wrap;
+  
+  a {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+}
+.field a,
+.about__links a,
+.link {
+  color: #b34c37;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+.about__links a,
+.link {
+  display: block;
+  line-height: 1.4;
+}
