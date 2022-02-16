@@ -1482,3 +1482,60 @@ main {
   line-height: 1.25;
   font-weight: 700;
 }
+.card {
+  width: 960px;
+  max-width: 100%;
+  padding: 40px;
+  background-color: #fffde8;
+  font-family: "Philosopher", "Arial", sans-serif;
+}
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__img {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.card__info {
+  width: 48%;
+  line-height: 1.3;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.card__price {
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+}
+.card__btn {
+  margin-top: 30px;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.card__btn:hover,
+.card__btn:active {
+  background-color: #e2b572;
+}
