@@ -1,0 +1,134 @@
+.footer {
+  position: relative;
+  z-index: 6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fffde8;
+  font-size: 21px;
+  font-weight: 500;
+  background-image: url(../img/images/bg-footer.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -65px center;
+  
+  .wrapper {
+    width: 1200px;
+  }
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.footer__feedback {
+  width: 369px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 9px;
+  border: 2px solid #fffde8;
+  
+  b {
+    font-weight: 500;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+.footer__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}
+.footer__diploma {
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.footer__logo {
+  position: relative;
+  top: -20px;
+  display: flex;
+  align-items: center;
+}
+.footer__menu {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+  li {
+    width: 50%;
+    padding-right: 10px;
+    
+    a {
+      text-decoration: none;
+      
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.footer__address {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.55;
+  font-weight: 400;
+  text-align: center;
+  
+  a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  p {
+    margin: 0;
+  }
+}
+.footer__venzel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 272px;
+  height: auto;
+  transform: rotate(180deg);
+}
+.footer__policy {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+.footer__text {
+  max-width: 1052px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  
+  a {
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
