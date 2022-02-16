@@ -832,7 +832,7 @@
     </div>
   </footer>
   
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="feedback" class="modal">
     <p class="modal__title">Ваше предложение</p>
     <form action="#" class="form">
@@ -850,6 +850,52 @@
       <input type="tel" class="form__input" placeholder="Ваш телефон">
       <button type="submit" class="btn form__btn">Отправить</button>
     </form>
+  </div>
+  
+  <!-- Cart window -->
+  <div class="cart">
+    <p class="cart__title">Ваш заказ:</p>
+    <table class="cart__table">
+      <tr>
+        <td>Форель жареная</td>
+        <td>
+          <div class="cart__value">
+            <input type="text" class="cart__num" value="1">
+            <span> шт</span>
+          </div>
+          <div class="cart__btns">
+            <button type="button" class="cart__change cart__change--minus">-</button>
+            <button type="button" class="cart__change cart__change--plus">+</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Шашлык из семги</td>
+        <td>
+          <div class="cart__value">
+            <input type="text" class="cart__num" value="1">
+            <span> шт</span>
+          </div>
+          <div class="cart__btns">
+            <button type="button" class="cart__change cart__change--minus">-</button>
+            <button type="button" class="cart__change cart__change--plus">+</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Доставка по городу:</td>
+        <td>
+          <div class="cart__price">250 руб.</div>
+        </td>
+      </tr>
+    </table>
+    <div class="cart__bottom">
+      <div class="cart__sum">
+        <span>Итого: </span>
+        <strong>1 885 руб.</strong>
+      </div>
+      <a href="#" class="btn cart__btn">оформить</a>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
