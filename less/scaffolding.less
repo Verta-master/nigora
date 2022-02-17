@@ -94,11 +94,12 @@ button {
 .title {
   position: relative;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 36px;
   color: #b34c37;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.55;
   text-align: center;
   
@@ -106,7 +107,7 @@ button {
   &::after {
     content: "";
     position: absolute;
-    bottom: 20px;
+    bottom: 23px;
     width: 250px;
     height: 63px;
     background-image: url(../img/images/venzel.png);
@@ -114,12 +115,25 @@ button {
     background-size: contain;
   }
   &::before {
-    left: 25%;
+    left: 24%;
     transform: translateX(-50%);
   }
   &::after {
-    right: 25%;
+    right: 24%;
     transform: translateX(50%);
+  }
+  
+  &--wide {
+    padding-top: 42px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    
+    &::before {
+      left: 20%;
+    }
+    &::after {
+      right: 20%;
+    }
   }
 }
 h3,
