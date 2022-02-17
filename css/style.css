@@ -701,6 +701,19 @@ main {
   line-height: 28px;
   background-color: #141414;
 }
+.menu--scroll .menu__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu--scroll .menu__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .menu__list {
   margin: 0;
   padding: 0;
@@ -711,6 +724,12 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu__item {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .menu__item:hover .menu__link,
 .menu__item:active .menu__link {
@@ -1433,6 +1452,9 @@ main {
 .cart__btn:active {
   background-color: #b34c37;
   color: #fff !important;
+}
+.cart__wrap {
+  height: 200px;
 }
 .contacts,
 .vacancy,
