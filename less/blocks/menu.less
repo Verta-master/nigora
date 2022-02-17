@@ -7,14 +7,29 @@
   font-weight: 700;
   line-height: 28px;
   background-color: #141414;
+  
+  &--scroll {
+    .menu__list {
+      justify-content: center;
+      .transition();
+    }
+    .menu__item {
+      margin-left: 20px;
+      margin-right: 20px;
+      .transition();
+    }
+  }
 }
 .menu__list {
   .reset();
   list-style: none;
   display: flex;
   justify-content: space-between;
+  .transition();
 }
 .menu__item {
+  .transition();
+  
   &:hover,
   &:active {
     .menu__link {
