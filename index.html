@@ -29,7 +29,7 @@
         <img src="img/images/logo.webp" alt="Настоящая узбекская кухня">
         <strong>Настоящая узбекская кухня</strong>
       </a>
-      <div class="header__block">
+      <div class="header__block header__block--user">
         <div class="header__contacts">Екатеринбург</div>
         <a data-fancybox="" data-src="#call" href="javascript:;" class="btn header__call">Заказать звонок</a>
         <a href="#" class="header__cart">
@@ -41,6 +41,7 @@
           </div>
           <div class="header__price">0&nbsp;₽</div>
         </a>
+        <button type="button" class="header__menu"></button>
       </div>
     </div>
   </header>
@@ -64,7 +65,29 @@
     </div>
   </nav>
   
-  <main>
+  <div class="mobile">
+    <button type="button" class="mobile__close"></button>
+    <div class="mobile__wrap">
+      <ul class="mobile__list">
+        <li class="mobile__item"><a href="#">ГЛАВНАЯ</a></li>
+        <li class="mobile__item"><a href="#">О НАС</a></li>
+        <li class="mobile__item"><a href="#">ОБ УЗБЕКСКОЙ КУХНЕ</a></li>
+        <li class="mobile__item"><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+      <div class="mobile__contacts">
+        <div class="mobile__address">
+          <address>Куйбышева, 55</address>
+          <a href="tel:+73432951417">+7 (343) 295-14-17</a>
+        </div>
+        <div class="mobile__address">
+          <address>Луначарского, 31</address>
+          <a href="tel:+73432885988">+7 (343) 288-59-88</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <main class="main">
     <section class="arc">
       <div class="wrapper arc__wrap">
         <div class="arc__text">
@@ -88,7 +111,7 @@
                   <img src="img/images/img-1.webp" alt="Форель жареная на углях">
                 </figure>
                 <p class="catalog__title">Форель жареная на углях<br>с картофелем «по-домашнему»</p>
-                <p class="js_preview_button" data-fancybox="" data-src="#js_preview_block_12">Быстрый просмотр</p>
+                <p class="js_preview_button" data-fancybox="#card" data-src="#js_preview_block_12">Быстрый просмотр</p>
               </a>
               <div class="catalog__info">
                 <div class="catalog__text">Состав: форель, картошка, помидоры, огурцы, соус<br>250/210/20/20/30 гр</div>
@@ -102,7 +125,7 @@
                   <img src="img/images/img-2.webp" alt="Бараньи ребра">
                 </figure>
                 <p class="catalog__title">Бараньи ребра<br>жареные на углях</p>
-                <p class="js_preview_button" data-fancybox="" data-src="#js_preview_block_12">Быстрый просмотр</p>
+                <p class="js_preview_button" data-fancybox="#card" data-src="#js_preview_block_12">Быстрый просмотр</p>
               </a>
               <div class="catalog__info">
                 <div class="catalog__text">Ребра отпускаются по весу, цена указана за 100гр Состав: ребра, помидоры, огурцы, соус<br>100/20/20/30 гр</div>
@@ -824,7 +847,7 @@
         <p>Самовывоз с Куйбышева, 55 <a href="tel:+73432951417">+7 (343) 295-14-17</a></p>
         <p>Самовывоз с Луначарского, 31 <a href="tel:+73432885988">+7 (343) 288-59-88</a></p>
       </div>
-      <img class="footer__venzel" src="img/images/venzel-white.png" alt="узбекская кухня">
+      <img class="footer__venzel" src="img/images/venzel-yellow.webp" alt="узбекская кухня">
       <a href="#" class="footer__policy">Политика конфиденциальности</a>
       <div class="footer__text">
         <p>На сайте обрабатываются файлы "Cookie", данные об IP-адресе и местоположении в целях правильного функционирования сайта. Вы можете отключить cookie- файлы в настройках браузера. Используя сайт без изменения настроек, вы даете согласие на использование cookie-файлов.</p>
@@ -855,7 +878,7 @@
   </div>
   
   <!-- Cart window -->
-  <div class="cart">
+  <div style="display: none;" class="cart">
     <p class="cart__title">Ваш заказ:</p>
     <div class="cart__wrap">
       <ul class="cart__list">
