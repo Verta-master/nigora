@@ -1577,6 +1577,7 @@ main {
 }
 .contacts,
 .basket,
+.card-page,
 .vacancy,
 .service,
 .about {
@@ -1838,6 +1839,19 @@ blockquote a {
 .card__btn:hover,
 .card__btn:active {
   background-color: #e2b572;
+}
+.card-page {
+  padding-top: 50px;
+}
+.card-page .card__btn {
+  background-color: #e2b572;
+}
+.card-page .card__btn:hover,
+.card-page .card__btn:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card-page .card__wrap {
+  margin-bottom: 50px;
 }
 .contacts__title {
   color: #141414;
