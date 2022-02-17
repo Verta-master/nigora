@@ -1094,12 +1094,12 @@ main {
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 100px;
 }
 .catalog__slider {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1957,7 +1957,7 @@ blockquote a {
   font-weight: 700 !important;
 }
 .basket__form {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .basket__form form {
   width: 100%;
@@ -2090,6 +2090,8 @@ blockquote a {
 }
 .basket__btn {
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .basket__link {
   color: #000 !important;
