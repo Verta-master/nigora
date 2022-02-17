@@ -858,10 +858,10 @@
   <div class="cart">
     <p class="cart__title">Ваш заказ:</p>
     <div class="cart__wrap">
-      <table class="cart__table">
-        <tr>
-          <td>Форель жареная</td>
-          <td>
+      <ul class="cart__list">
+        <li class="cart__item">
+          <a href="#" class="cart__name">Форель жареная</a>
+          <div class="cart__control">
             <div class="cart__value">
               <input type="text" class="cart__num" value="1">
               <span> шт</span>
@@ -870,11 +870,14 @@
               <button type="button" class="cart__change cart__change--minus">-</button>
               <button type="button" class="cart__change cart__change--plus">+</button>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Шашлык из семги</td>
-          <td>
+          </div>
+          <div class="cart__block">
+            <a href="#" class="cart__remove" title="Удалить">x</a>
+          </div>
+        </li>
+        <li class="cart__item">
+          <a href="#" class="cart__name">Шашлык из семги</a>
+          <div class="cart__control">
             <div class="cart__value">
               <input type="text" class="cart__num" value="1">
               <span> шт</span>
@@ -883,67 +886,16 @@
               <button type="button" class="cart__change cart__change--minus">-</button>
               <button type="button" class="cart__change cart__change--plus">+</button>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Форель жареная</td>
-          <td>
-            <div class="cart__value">
-              <input type="text" class="cart__num" value="1">
-              <span> шт</span>
-            </div>
-            <div class="cart__btns">
-              <button type="button" class="cart__change cart__change--minus">-</button>
-              <button type="button" class="cart__change cart__change--plus">+</button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Шашлык из семги</td>
-          <td>
-            <div class="cart__value">
-              <input type="text" class="cart__num" value="1">
-              <span> шт</span>
-            </div>
-            <div class="cart__btns">
-              <button type="button" class="cart__change cart__change--minus">-</button>
-              <button type="button" class="cart__change cart__change--plus">+</button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Форель жареная</td>
-          <td>
-            <div class="cart__value">
-              <input type="text" class="cart__num" value="1">
-              <span> шт</span>
-            </div>
-            <div class="cart__btns">
-              <button type="button" class="cart__change cart__change--minus">-</button>
-              <button type="button" class="cart__change cart__change--plus">+</button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Шашлык из семги</td>
-          <td>
-            <div class="cart__value">
-              <input type="text" class="cart__num" value="1">
-              <span> шт</span>
-            </div>
-            <div class="cart__btns">
-              <button type="button" class="cart__change cart__change--minus">-</button>
-              <button type="button" class="cart__change cart__change--plus">+</button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Доставка по городу:</td>
-          <td>
-            <div class="cart__price">250 руб.</div>
-          </td>
-        </tr>
-      </table>
+          </div>
+          <div class="cart__block">
+            <a href="#" class="cart__remove" title="Удалить">x</a>
+          </div>
+        </li>
+        <li class="cart__item">
+          <div class="cart__name">Доставка по городу:</div>
+          <div class="cart__price">250 руб.</div>
+        </li>
+      </ul>
     </div>
     <div class="cart__bottom">
       <div class="cart__sum">
