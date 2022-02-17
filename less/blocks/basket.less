@@ -1,0 +1,121 @@
+.basket__form {
+  margin-bottom: 60px;
+  
+  form {
+    width: 100%;
+  }
+  .form__input {
+    width: 48%;
+    height: 76px;
+    margin-bottom: 50px;
+    padding: 0 25px;
+    font-size: 40px;
+    color: #000;
+    border-radius: 10px;
+    background-color: rgba(255, 253, 239,0.5);
+    box-shadow: 0px 0px 9.76px 6.24px rgba(0, 0, 0, 0.07);
+    border: 0;
+    
+    &::placeholder {
+      opacity: 0.39;
+    }
+  }
+}
+.basket__layer {
+  padding: 0 50px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  background-color: rgba(255, 253, 239, 0.5);
+  box-shadow: 0px 0px 9.76px 6.24px rgba(0, 0, 0, 0.07);
+}
+.basket__table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  tr {
+    border-bottom: 1px solid #000;
+  }
+  td {
+    padding: 30px 0;
+    vertical-align: middle;
+    
+    &:nth-child(4) {
+      width: 180px;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+.basket__img {
+  display: block;
+  width: 190px;
+  padding: 0 15px;
+}
+.basket__title {
+  display: block;
+  padding: 0 50px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red !important;
+    .transition();
+  }
+}
+.basket__remove {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url(../img/icons/cross.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 37px 37px;
+}
+.basket__change {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basket__total {
+  padding: 30px 100px;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: right;
+}
+.basket__value,
+.basket__num {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.basket__value {
+  font-size: 30px;
+  font-weight: 700;
+  background-color: rgba(255,255,255,0);
+}
+.basket__num {
+  font-size: 40px;
+  opacity: 0.5;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+.basket__btn {
+  margin-top: 60px;
+}
+.basket__link {
+  color: #000 !important;
+  font-weight: 700 !important;
+}
