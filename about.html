@@ -27,11 +27,12 @@
       </div>
       <a href="#" class="logo">
         <img src="img/images/logo.webp" alt="Настоящая узбекская кухня">
-        <strong>Настоящая узбекская кухня</strong>
+        <strong>Настоящая узбекская <span>кухня</span></strong>
       </a>
-      <div class="header__block">
+      <div class="header__block header__block--user">
         <div class="header__contacts">Екатеринбург</div>
         <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call">Заказать звонок</a>
+        <button type="button" class="header__menu"></button>
         <a href="#" class="header__cart">
           <div class="header__icon">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +64,28 @@
       </ul>
     </div>
   </nav>
+  
+  <div class="mobile">
+    <button type="button" class="mobile__close"></button>
+    <div class="mobile__wrap">
+      <ul class="mobile__list">
+        <li class="mobile__item"><a href="#">Главная</a></li>
+        <li class="mobile__item"><a href="#">О нас</a></li>
+        <li class="mobile__item"><a href="#">Об узбекской кухне</a></li>
+        <li class="mobile__item"><a href="#">Контакты</a></li>
+      </ul>
+      <div class="mobile__contacts">
+        <div class="mobile__address">
+          <address>Куйбышева, 55</address>
+          <a href="tel:+73432951417">+7 (343) 295-14-17</a>
+        </div>
+        <div class="mobile__address">
+          <address>Луначарского, 31</address>
+          <a href="tel:+73432885988">+7 (343) 288-59-88</a>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <main>
     <section class="field">
@@ -201,5 +224,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
