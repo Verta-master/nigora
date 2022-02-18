@@ -1563,6 +1563,20 @@ main {
 }
 .cart__wrap {
   height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #a87e46;
+}
+.cart__wrap::-webkit-scrollbar {
+  width: 6px;
+}
+.cart__wrap::-webkit-scrollbar-track {
+  background: rgba(255, 253, 239, 0.5);
+}
+.cart__wrap::-webkit-scrollbar-thumb {
+  background-color: #a87e46;
+  border-radius: 3px;
+  border: 1px solid #a87e46;
 }
 .cart__remove {
   display: block;
