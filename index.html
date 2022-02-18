@@ -27,11 +27,12 @@
       </div>
       <a href="#" class="logo">
         <img src="img/images/logo.webp" alt="Настоящая узбекская кухня">
-        <strong>Настоящая узбекская кухня</strong>
+        <strong>Настоящая узбекская <span>кухня</span></strong>
       </a>
       <div class="header__block header__block--user">
         <div class="header__contacts">Екатеринбург</div>
         <a data-fancybox="" data-src="#call" href="javascript:;" class="btn header__call">Заказать звонок</a>
+        <button type="button" class="header__menu"></button>
         <a href="#" class="header__cart">
           <div class="header__icon">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +42,6 @@
           </div>
           <div class="header__price">0&nbsp;₽</div>
         </a>
-        <button type="button" class="header__menu"></button>
       </div>
     </div>
   </header>
@@ -69,10 +69,10 @@
     <button type="button" class="mobile__close"></button>
     <div class="mobile__wrap">
       <ul class="mobile__list">
-        <li class="mobile__item"><a href="#">ГЛАВНАЯ</a></li>
-        <li class="mobile__item"><a href="#">О НАС</a></li>
-        <li class="mobile__item"><a href="#">ОБ УЗБЕКСКОЙ КУХНЕ</a></li>
-        <li class="mobile__item"><a href="#">КОНТАКТЫ</a></li>
+        <li class="mobile__item"><a href="#">Главная</a></li>
+        <li class="mobile__item"><a href="#">О нас</a></li>
+        <li class="mobile__item"><a href="#">Об узбекской кухне</a></li>
+        <li class="mobile__item"><a href="#">Контакты</a></li>
       </ul>
       <div class="mobile__contacts">
         <div class="mobile__address">
@@ -103,9 +103,9 @@
     <section class="field">
       <div class="wrapper field__wrap">
         <h2 class="title">Меню</h2>
-        <div class="catalog">
+        <div class="catalog catalog--exchange">
           <ul class="catalog__list">
-            <li class="catalog__item">
+            <li class="catalog__item catalog__item--cafe">
               <a data-fancybox="" data-src="#card" href="javascript:;" class="catalog__link">
                 <figure class="catalog__img">
                   <img src="img/images/img-1.webp" alt="Форель жареная на углях">
@@ -224,6 +224,8 @@
               </div>
               <a href="#" class="btn catalog__btn">Добавить в корзину</a>
             </li>
+          </ul>
+          <ul class="catalog__list">
             <li class="catalog__item catalog__item--big">
               <a href="#" class="catalog__link">
                 <figure class="catalog__img">

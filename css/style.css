@@ -609,6 +609,9 @@ main {
           transform: translateX(-50%);
   min-width: 233px;
 }
+.logo span {
+  margin-left: 5px;
+}
 .header__contacts {
   margin-right: 15px;
   color: #141414;
@@ -695,7 +698,6 @@ main {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.mobile,
 .header__menu {
   display: none;
 }
@@ -2117,6 +2119,73 @@ blockquote a {
   color: #000 !important;
   font-weight: 700 !important;
 }
+.mobile {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  right: -300px;
+  width: 300px;
+  max-width: 100%;
+  padding: 25px;
+  padding-top: 42px;
+  background-color: #fffce6;
+  overflow: hidden;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.mobile--opened {
+  z-index: 2000;
+  opacity: 1;
+  right: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.mobile__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.mobile__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile__item {
+  margin-bottom: 15px;
+}
+.mobile__address,
+.mobile__item a {
+  color: #015636;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mobile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.mobile__contacts {
+  margin-top: auto;
+}
+.mobile__address {
+  margin-top: 30px;
+}
+.mobile__address a {
+  display: block;
+}
 @media (max-width: 1380px) {
   .wrapper {
     padding-left: 30px;
@@ -2308,6 +2377,9 @@ blockquote a {
     width: 88px;
     height: auto;
   }
+  .logo span {
+    margin-left: 10px;
+  }
 }
 @media (max-width: 700px) {
   .divider,
@@ -2385,20 +2457,37 @@ blockquote a {
     margin-bottom: 5px;
     padding: 10px;
   }
-  .catalog__item:first-child {
+  .catalog__item--cafe {
     display: none;
   }
+  .catalog__item--big .catalog__info {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .catalog--exchange {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .catalog__img {
-    width: 313px;
+    width: 100%;
     max-width: 100%;
     height: 313px;
   }
   .catalog__title {
     font-size: 20px;
   }
+  .catalog__item--big .catalog__text,
   .catalog__text {
     font-size: 14px;
+    margin-bottom: 10px;
   }
+  .catalog__item--big .catalog__price,
   .catalog__price {
     font-size: 24px;
   }
