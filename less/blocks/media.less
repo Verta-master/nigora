@@ -191,6 +191,9 @@
       height: auto;
     }
   }
+  .logo span {
+    margin-left: 10px;
+  }
 }
 //---------------------------------------------
 @media (max-width: 700px) {
@@ -268,21 +271,33 @@
     margin-bottom: 5px;
     padding: 10px;
     
-    &:first-child {
+    &--cafe {
       display: none;
     }
   }
+  .catalog__item--big .catalog__info {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .catalog--exchange {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .catalog__img {
-    width: 313px;
+    width: 100%;
     max-width: 100%;
     height: 313px;
   }
   .catalog__title {
     font-size: 20px;
   }
+  .catalog__item--big .catalog__text,
   .catalog__text {
     font-size: 14px;
+    margin-bottom: 10px;
   }
+  .catalog__item--big .catalog__price,
   .catalog__price {
     font-size: 24px;
   }
