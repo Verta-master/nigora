@@ -1,0 +1,53 @@
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 90px;
+  margin: 0;
+  margin-top: -40px;
+  background-image: url(../img/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 17px 81p;
+  background-position: center;
+}
+.owl-theme .owl-nav [class*=owl-]:hover,
+.owl-theme .owl-nav [class*=owl-]:active {
+  background-image: url(../img/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 17px 81p;
+  background-position: center;
+  background-color: rgba(255, 253, 239,0.5);
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+  transform: rotate(180deg);
+}
+.catalog__owl {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.catalog__slider-wrap {
+  padding: 0;
+}
+.catalog__slide {
+  width: 100%;
+}
+.owl-carousel .owl-item {
+  display: flex;
+  height: auto !important;
+}
+.owl-stage {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .basket .title::after {
+    right: 17%;
+  }
+  .basket .title::before {
+    left: 17%;
+  }
+}

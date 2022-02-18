@@ -1,0 +1,24 @@
+1) В футере заменить картинку вензеля на желтую:
+
+<img class="footer__venzel" src="img/images/venzel-yellow.webp" alt="узбекская кухня">
+
+2) Добавить мобильное меню .mobile
+3) В шапка добавилась кнопка для мобильного меню
+
+<button type="button" class="header__menu"></button>
+
+4) В лого в шапке слово "кухня" надо заклюцить в span
+
+<strong>Настоящая узбекская <span>кухня</span></strong>
+
+5) Обновить файл script.js
+6) Первому каталогу добавить класс:
+
+<div class="catalog catalog--exchange">
+7) Элементу списка, который без доставки, добавить класс:
+
+<li class="catalog__item catalog__item--cafe">
+
+8) Только на главной блоку main добавить класс:
+
+<main class="main">
