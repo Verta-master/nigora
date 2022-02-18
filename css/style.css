@@ -2982,4 +2982,8 @@ blockquote a {
     font-size: 18px;
     line-height: 1.3;
   }
+  .js_preview_button {
+    left: 0;
+    right: 0;
+  }
 }
