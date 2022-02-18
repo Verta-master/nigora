@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!--  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -169,6 +171,7 @@
           <div class="catalog">
             <p class="title">Добавить к заказу</p>
             <div class="catalog__slider-wrap">
+<!--
               <div class="swiper-container catalog__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide catalog__slide">
@@ -253,6 +256,88 @@
               </div>
               <div class="swiper-button-prev catalog__prev"></div>
               <div class="swiper-button-next catalog__next"></div>
+-->
+              
+              <div class="owl-carousel owl-theme catalog__owl">
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-2.webp" alt="Лаваш тонкий">
+                    </figure>
+                    <p class="catalog__title">Лаваш тонкий</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">80 г</div>
+                    <div class="catalog__price">25 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-3.webp" alt="Аджика">
+                    </figure>
+                    <p class="catalog__title">Аджика</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">30 г</div>
+                    <div class="catalog__price">35 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-2.webp" alt="Лаваш тонкий">
+                    </figure>
+                    <p class="catalog__title">Лаваш тонкий</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">80 г</div>
+                    <div class="catalog__price">25 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-3.webp" alt="Аджика">
+                    </figure>
+                    <p class="catalog__title">Аджика</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">30 г</div>
+                    <div class="catalog__price">35 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-2.webp" alt="Лаваш тонкий">
+                    </figure>
+                    <p class="catalog__title">Лаваш тонкий</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">80 г</div>
+                    <div class="catalog__price">25 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+                <div class="item catalog__slide">
+                  <a href="#" class="catalog__link">
+                    <figure class="catalog__img">
+                      <img src="img/images/img-3.webp" alt="Аджика">
+                    </figure>
+                    <p class="catalog__title">Аджика</p>
+                  </a>
+                  <div class="catalog__info">
+                    <div class="catalog__text">30 г</div>
+                    <div class="catalog__price">35 р.</div>
+                  </div>
+                  <a href="#" class="btn catalog__btn">Добавить</a>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -373,36 +458,62 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
   
   <!-- Slider -->
   <script>
-    var mySwiper = new Swiper ('.catalog__slider', {
-      navigation: {
-        nextEl: '.catalog__next',
-        prevEl: '.catalog__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 2,
-      spaceBetween: 10,
-      breakpoints: {
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+//    var mySwiper = new Swiper ('.catalog__slider', {
+//      navigation: {
+//        nextEl: '.catalog__next',
+//        prevEl: '.catalog__prev',
+//      },
+//      simulateTouch: false,
+//      preventClicks: false,
+//      preventClicksPropagation: false,
+//      slidesPerView: 2,
+//      spaceBetween: 10,
+//      breakpoints: {
+//        480: {
+//          slidesPerView: 3,
+//          spaceBetween: 20,
+//        },
+//        766: {
+//          slidesPerView: 4,
+//          spaceBetween: 20,
+//        },
+//        1280: {
+//          slidesPerView: 5,
+//          spaceBetween: 40,
+//        }
+//      }
+//    });
+    
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText:["",""],
+      responsive:{
+        0:{
+          items: 2
         },
-        766: {
-          slidesPerView: 4,
-          spaceBetween: 20,
+        480:{
+          items: 3,
+          margin: 20
         },
-        1280: {
-          slidesPerView: 5,
-          spaceBetween: 40,
+        766:{
+          items: 4,
+          margin: 20
+        },
+        1280:{
+          items: 5,
+          margin: 40
         }
       }
-    });
+    })
   </script>
 </body>
 </html>
